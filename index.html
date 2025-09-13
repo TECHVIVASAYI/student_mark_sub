@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marksheet</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title"><u>Student Mark Submission</u></h1>
+    <div class="container">
+        <div>
+            <h2 id="hname"> Name of the Student :</h2></label>                    
+            <input id="name" type="text" placeholder="Enter Name" autofocus>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Subject</th>
+                    <th>Mark</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Tamil</td>
+                    <td><input id="Tamil" type="number" min="0" max="100" placeholder="Enter"></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>English</td>
+                    <td><input id="English" type="number" min="0" max="100" placeholder="Enter"></td>
+                </tr>
+                 <tr>
+                    <td>3.</td>
+                    <td>Maths</td>
+                    <td><input id="Maths" type="number" min="0" max="100" placeholder="Enter"></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Science</td>
+                    <td><input id="Science" type="number" min="0" max="100" placeholder="Enter"></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Social Science</td>
+                    <td><input id="SScience" type="number" min="0" max="100" placeholder="Enter"></td>
+                </tr>
+            </tbody>        
+        </table>
+        <div>
+            <button  onclick="total()">Total</button>
+            <button onclick="submit()">Submit</button>
+            <button id="clear" onclick="clearFields()">Clear</button>
+        </div>
+        <div>
+            <h2 id="tm">Total Marks: <span id="totalMarks">0</span></h2>
+            <h2 id="per">Percentage : <span id="percentage">0%</span></h2>
+        </div>
+    </div>
+    
+</body>
+</html>
